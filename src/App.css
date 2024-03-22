@@ -303,3 +303,15 @@ body {
         top: 100px;
     }
 }
+
+
+/* hoverEffect */
+
+.zoomEffect {
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.zoomEffect:hover {
+    transform: scale(0.95);
+}

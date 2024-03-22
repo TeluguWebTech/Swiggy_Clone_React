@@ -45,7 +45,8 @@ const FirmCollections = () => {
             ){
                 return (
                   <Link to={`/products/${item._id}/${item.firmName}`} className="link" key={item._id}>
-                    <div className="firmGroupBox">
+   <div className="zoomEffect">
+   <div className="firmGroupBox">
                       <div className="firmGroup">
                         <img src={`${API_URL}/uploads/${item.image}`} alt={item.firmName} />
                         <div className="firmOffer">{item.offer}</div>
@@ -57,6 +58,7 @@ const FirmCollections = () => {
                         <div className="firmArea">{item.area}</div>
                       </div>
                     </div>
+   </div>
                   </Link>
                 );
             }
