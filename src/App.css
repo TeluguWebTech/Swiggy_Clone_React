@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topBarSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 90%;
+    min-width: 80%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.companyTitle h2 {
+    color: orangered;
+    text-decoration: none;
+}
+
+
+/* item section */
+
+.itemSection {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.gallery {
+    width: 150px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+
+/* landingPage */
+
+.landingSection {
+    padding: 0 120px;
+}
+
+
+/* chainseCtion */
+
+.chainSection {
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    height: auto;
+}
+
+.vendorBox {
+    border-radius: 10px;
+}
+
+.vendorBox img {
+    width: 350px;
+    height: 220px;
+    flex: 0 0 auto;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btnSection {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 50px;
+    right: 10px;
+    gap: 10px;
+}
+
+.btnSection button {
+    border: none;
+    background: none;
+}
+
+.btnIcons {
+    font-size: x-large;
+}
+
+
+/* firmSection */
+
+.firmSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.filterButtons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterButtons button {
+    width: 10rem;
+    padding: 5px 0;
+}
+
+.firmGroup {
+    position: relative;
+}
+
+.firmGroup img {
+    width: 240px;
+    height: 180px;
+    flex: 0 0 auto;
+    margin-right: 30px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.firmDetails {
+    padding-left: 10px;
+}
+
+.firmOffer {
+    width: 100%;
+    max-width: 85%;
+    position: absolute;
+    bottom: 5px;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: transparent;
+    background: linear-gradient(to bottom, rgba(50, 0, 0, 0.08), black);
+    color: white;
+    text-transform: uppercase;
+}
+
+.firmName {
+    color: black;
+}
+
+.firmArea {
+    font-size: small;
+    color: gray;
+}
+
+.activeButton {
+    background-color: darkblue;
+    color: white;
+}
+
+
+/* productSection */
+
+.productSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    margin-top: 100px;
+}
+
+.productSection h3 {
+    text-align: center;
+    background-color: orange;
+}
+
+.productBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-top: 2px solid lightgray;
+    position: relative;
+}
+
+.productGroup img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.addButton {
+    border: 1px solid lightgray;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    color: green;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    max-width: 80px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* loaderSection */
+
+.loaderSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .topBarSection {
+        padding: 0 20px;
+    }
+    .landingSection {
+        padding: 0 10px;
+    }
+    .itemSection {
+        margin-top: 80px;
+    }
+    h3 {
+        font-weight: 800;
+        font-size: medium;
+        color: rgb(34, 30, 30);
+    }
+    .chainSection {
+        height: 190px;
+    }
+    .vendorBox img {
+        width: 260px;
+        height: 180px;
+        flex: 0 0 auto;
+        margin-right: 30px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .mediaChainSection {
+        margin-top: -30px;
+    }
+    .firmSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .firmOffer {
+        position: absolute;
+        width: 100%;
+        max-width: 63%;
+    }
+    .firmGroup img {
+        width: 300px;
+    }
+    .productSection {
+        padding: 0 10px;
+    }
+    .productSection h3 {
+        text-align: center;
+        background-color: orange;
+    }
+    .filterButtons {}
+    .filterButtons button {
+        width: 5rem;
+        padding: 5px;
+        margin-right: 5px;
+    }
+}
