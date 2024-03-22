@@ -256,7 +256,7 @@ body {
     .firmOffer {
         position: absolute;
         width: 100%;
-        max-width: 63%;
+        max-width: 88%;
     }
     .firmGroup img {
         width: 300px;
@@ -268,10 +268,38 @@ body {
         text-align: center;
         background-color: orange;
     }
-    .filterButtons {}
+    .searchBar {
+        border: 1px solid red;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .searchBar input {
+        width: 100%;
+        max-width: 50%;
+    }
     .filterButtons button {
         width: 5rem;
         padding: 5px;
         margin-right: 5px;
+    }
+    .userAuth {
+        margin-right: 10px;
+    }
+    .btnIcons {
+        font-size: large;
+        gap: 2px;
+    }
+    .chainTitle {
+        position: relative;
+        top: -10px;
+    }
+    .loaderSection {
+        position: relative;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
     }
 }
