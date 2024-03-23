@@ -3,6 +3,7 @@ import { API_URL } from '../api'
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 import { MagnifyingGlass } from 'react-loader-spinner'
+import { Link } from 'react-router-dom';
 
 const Chains = () => {
     const [vendorData, setVendorData] = useState([]);
@@ -87,9 +88,11 @@ const handleScroll =(direction)=>{
                                     {/* {item.firmName} */}
                                   
                                 </div>
-                                <div className="firmImage">
+                        <Link to={`/products/${item._id}/${item.firmName}`} className="link" key={item._id}>
+                        <div className="firmImage">
                                     <img src= {`${API_URL}/uploads/${item.image}`} />
                                 </div>
+                        </Link>
                                </>
 
                             )
